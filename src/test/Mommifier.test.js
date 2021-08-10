@@ -13,4 +13,8 @@ describe('Mommifier Test', () => {
         const mommyFilter = new Mommifier('a');
         expect(mommyFilter.getResult()).toBe('mommy');
     })
+    test('should return itself when vowels length less then 30% total length', () => {
+        const mommyFilter = new Mommifier('abbbb');
+        expect(mommyFilter.getResult()).toBe('abbbb');
+    })
 })
