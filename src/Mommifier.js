@@ -10,7 +10,7 @@ class Mommifier {
     if (this.str.replace(/[aeiou]/g, '').length > 0.7 * this.str.length) {
       return this.str;
     }
-    return this.str.replace(/[aeiou]/g, 'mommy');
+    return this.str.replace(/[aeiou]+/g, 'mommy');
   }
 }
 
