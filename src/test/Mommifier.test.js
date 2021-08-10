@@ -17,4 +17,8 @@ describe('Mommifier Test', () => {
         const mommyFilter = new Mommifier('abbbb');
         expect(mommyFilter.getResult()).toBe('abbbb');
     })
+    test('should return when vowels length more than 30% and not continuous', () => {
+        const mommyFilter = new Mommifier('abcde');
+        expect(mommyFilter.getResult()).toBe('mommybcdmommy');
+    })
 })
