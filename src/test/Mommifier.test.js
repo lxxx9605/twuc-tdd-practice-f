@@ -1,9 +1,8 @@
 import Mommifier from "../Mommifier";
 
 describe('Mommifier Test', () => {
-    test('demo test', () => {
-        const mommifier = new Mommifier();
-
-        expect(1).toBe(1);
+    test('should get empty string when input enpty string', () => {
+        const mommyFilter = new Mommifier('');
+        expect(mommyFilter.getResult())
     })
 })
