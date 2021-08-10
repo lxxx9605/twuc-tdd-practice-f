@@ -9,4 +9,8 @@ describe('Mommifier Test', () => {
         const mommyFilter = new Mommifier('b');
         expect(mommyFilter.getResult()).toBe('b');
     });
+    test('should return mommy when input a vowel', () => {
+        const mommyFilter = new Mommifier('a');
+        expect(mommyFilter.getResult()).toBe('mommy');
+    })
 })

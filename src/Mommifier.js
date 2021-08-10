@@ -4,7 +4,10 @@ class Mommifier {
   }
 
   getResult() {
-    return this.str;
+    if (/^[^aeiou]*$/.test(this.str)) {
+      return this.str;
+    }
+    return 'mommy';
   }
 }
 
